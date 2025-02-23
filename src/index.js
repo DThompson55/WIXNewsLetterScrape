@@ -391,9 +391,9 @@ function getServices(articles) {
   }
   fs.writeFile('../services.js', JSON.stringify(nodes,null,2));
 let update = [{data:{
-          title:           "Sunday Service Update",
+          title:           "Sunday Services Schedule",
           richcontent: {nodes},
-          longDescription: "Sunday Service Update"
+          longDescription: "Sunday Services Schedule"
         }}]
 
   bulkInsert(newsLetterCMS,update); // i hate this here
